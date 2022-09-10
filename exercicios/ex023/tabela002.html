@@ -12,11 +12,28 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th{
             border: 1px solid black;
             padding: 10px;
         }
+
+         caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+         }
+         thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: darkblue;
+         }
+
+         tbody > tr:nth-child(2n) {
+            background-color: darkgray;    
+         }
         thead, tfoot{
             background-color: gray;
             color: white;
@@ -28,6 +45,7 @@
     <!--
         Anatomia para tabelas grandes
         TABLE
+            CAPTION 
             THEAD 
                 TR,TD,TH
             TBODY
@@ -36,10 +54,12 @@
                 TR,TD,TH
     -->  
     <table>
+        <caption>População das unidades federativas  
+        </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px">População</th>
 
             </tr>
         </thead>
@@ -56,11 +76,101 @@
                 <td>Rio de Janeiro</td>
                 <td>17 274 943</td>
             </tr>
+            <tr>
+                <td>Bahia</td>
+                <td>14 873 064</td>
+            </tr>   
+            <tr>
+                <td>Paraná</td>
+                <td>11 433 957</td>
+            </tr>    
+            <tr>
+                <td>Rio Grande Do Sul</td>
+                <td>11 377 239</td>
+            </tr>    
+            <tr>
+                <td>Pernambuco</td>
+                <td>9 557 071</td>
+            </tr> 
+            <tr>
+                <td>Ceará</td>
+                <td>9 132 078</td>
+            </tr> 
+            <tr>
+                <td>Pernambuco</td>
+                <td>9 557 071</td>
+            </tr> 
+            <tr>
+                <td>Pernambuco</td>
+                <td>9 557 071</td>
+            </tr> 
+            <tr>
+                <td>Pernambuco</td>
+                <td>9 557 071</td>
+            </tr> 
+            <tr>
+                <td>Pernambuco</td>
+                <td>9 557 071</td>
+            </tr> 
+            <tr>
+                <td>Pernambuco</td>
+                <td>9 557 071</td>
+            </tr> 
+            <tr>
+                <td>Pernambuco</td>
+                <td>9 557 071</td>
+            </tr> 
+            <tr>
+                <td>Pernambuco</td>
+                <td>9 557 071</td>
+            </tr> 
+            <tr>
+                <td>Pernambuco</td>
+                <td>9 557 071</td>
+            </tr> 
+            <tr>
+                <td>Pernambuco</td>
+                <td>9 557 071</td>
+            </tr> 
+            <tr>
+                <td>Pernambuco</td>
+                <td>9 557 071</td>
+            </tr> 
+            <tr>
+                <td>Pernambuco</td>
+                <td>9 557 071</td>
+            </tr> 
+            <tr>
+                <td>Pernambuco</td>
+                <td>9 557 071</td>
+            </tr> 
+            <tr>
+                <td>Pernambuco</td>
+                <td>9 557 071</td>
+            </tr> 
+            <tr>
+                <td>Pernambuco</td>
+                <td>9 557 071</td>
+            </tr> 
+            <tr>
+                <td>Pernambuco</td>
+                <td>9 557 071</td>
+            </tr> 
+            <tr>
+                <td>Pernambuco</td>
+                <td>9 557 071</td>
+            </tr> 
+            <tr>
+                <td>Pernambuco</td>
+                <td>9 557 071</td>
+            </tr> 
+            
+
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
-                <td>0000</td>
+                <th scope="row">Total de habitantes</th>
+                <td>212 000 000</td>
             </tr>
         </tfoot>
     </table>
